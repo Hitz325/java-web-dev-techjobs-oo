@@ -108,12 +108,12 @@ public class  Job {
             }
         }
 
-        return "ID:  " + job.getId() + " \n" +
-                "Name:  " + job.getName() + " \n" +
-                "Employer:  " + job.getEmployer() + " \n" +
-                "Location:  " + job.getLocation() + " \n" +
-                "Position Type:  " + job.getPositionType() + " \n" +
-                "Core Competency:  " + job.getCoreCompetency() + " ";
+        return "ID: " + job.getId() + " \n" +
+                "Name: " + job.getName() + " \n" +
+                "Employer: " + job.getEmployer() + " \n" +
+                "Location: " + job.getLocation() + " \n" +
+                "Position Type: " + job.getPositionType() + " \n" +
+                "Core Competency: " + job.getCoreCompetency() + " \n";
         }
 }
 
