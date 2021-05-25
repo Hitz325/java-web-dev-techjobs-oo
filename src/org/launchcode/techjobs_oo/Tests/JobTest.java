@@ -46,22 +46,22 @@ public class JobTest {
         Job testJob6 =  new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType(
                 "Quality control"), new CoreCompetency("Persistence"));
 
-        assertTrue(testJob6.toString(testJob6).contentEquals("ID:  "+testJob6.getId()+" \n"+
-                        "Name:  "+testJob6.getName()+" \n" +
-                        "Employer:  "+testJob6.getEmployer()+" \n" +
-                        "Location:  "+testJob6.getLocation()+" \n" +
-                        "Position Type:  "+testJob6.getPositionType()+" \n" +
-                        "Core Competency:  "+testJob6.getCoreCompetency()+" "));
+        assertTrue(testJob6.toString(testJob6).contentEquals("ID: "+testJob6.getId()+" \n"+
+                        "Name: "+testJob6.getName()+" \n" +
+                        "Employer: "+testJob6.getEmployer()+" \n" +
+                        "Location: "+testJob6.getLocation()+" \n" +
+                        "Position Type: "+testJob6.getPositionType()+" \n" +
+                        "Core Competency: "+testJob6.getCoreCompetency()+" \n"));
 
         Job testJob7 =  new Job("Product tester", new Employer(""), new Location(""), new PositionType(
                 ""), new CoreCompetency(""));
 
-        assertTrue(testJob7.toString(testJob7).contentEquals("ID:  "+testJob7.getId()+" \n"+
-                "Name:  "+testJob7.getName()+" \n" +
-                "Employer:  Data not available \n" +
-                "Location:  Data not available \n" +
-                "Position Type:  Data not available \n" +
-                "Core Competency:  Data not available "));
+        assertTrue(testJob7.toString(testJob7).contentEquals("ID: "+testJob7.getId()+" \n"+
+                "Name: "+testJob7.getName()+" \n" +
+                "Employer: Data not available \n" +
+                "Location: Data not available \n" +
+                "Position Type: Data not available \n" +
+                "Core Competency: Data not available \n"));
 
         Job testJob8 =  new Job("", new Employer(""), new Location(""), new PositionType(
                 ""), new CoreCompetency(""));
